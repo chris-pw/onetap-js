@@ -107,12 +107,6 @@ function main()
     Render.String(x + 1588, y + 30, 0, "onetap.su" + "   |   " + watermark_name + "   |   " + "ping: " + ping + "   |   " + "fps: " + fps, [255, 255, 255, 200], 3);
 
 
-    /*Render.Rect(x1 - 1, y1 - 1, 102, 61 + 15 * (names.length - 1), [2, 2, 2, 100]);
-    Render.FilledRect(x1, y1, 100, 60 + 15 * (names.length - 1), [55, 55, 55, 200]);
-    Render.Rect(x1 + 5, y1+ 5, 90, 50 + 15 * (names.length - 1), [2, 2, 2, 100]);
-    Render.FilledRect(x1 + 5, y1 + 5, 90, 50 + 15 * (names.length - 1), [25, 25, 25, 200]);
-    Render.FilledRect(x1 + 5, y1 + 5, 90, 3, rainbow);
-    Render.String(x1 + 50, y1 + 5, 1, "OT", rainbow, 4);*/
     Render.Rect(x1 + 1799, y1 + 9, 102, 61 + 15 * (names.length - 1), [2, 2, 2, 100]);
     Render.FilledRect(x1 + 1800, y1 + 10, 100, 60 + 15 * (names.length - 1), [55, 55, 55, 200]);
     Render.Rect(x1 + 1805, y1+ 15, 90, 50 + 15 * (names.length - 1), [2, 2, 2, 100]);
