@@ -1,15 +1,15 @@
-UI.AddDropdown( "Custom ClanTag", [ "Disabled", "Fakehead animated v1", "Fakehead animated v2", "Fakehead static" ]  );
-UI.AddSliderInt( "Custom ClanTag Speed", 1, 10 );
+UI.AddDropdown( "Custom clantag", [ "Disabled", "Fakehead animated v1", "Fakehead animated v2", "Fakehead static" ]  );
 var lasttime = 0;
 function onRender( )
 {
     var tag = UI.GetValue( "Script Items", "Custom ClanTag" );
-    var speed = UI.GetValue( "Script Items", "Custom ClanTag Speed" );
+    var speed = 2;
     var time = parseInt((Globals.Curtime() * speed))
     if (time != lasttime)
     {
-        if (tag = 1) {
-            switch((time) % 31) // case number
+        if (tag = 1) { Local.SetClanTag(""); }
+        if (tag = 2) {
+            switch((time) % 32)
             {
             case 0: { Local.SetClanTag("                  "); break; }
             case 1: { Local.SetClanTag("$                 "); break; }
@@ -45,8 +45,8 @@ function onRender( )
             }
         }
         
-        else if (tag = 2) {
-            switch((time) % 31) // case number
+        else if (tag = 3) {
+            switch((time) % 25)
             {
             case 0: { Local.SetClanTag(""); break; }
             case 1: { Local.SetClanTag("$"); break; }
@@ -76,7 +76,7 @@ function onRender( )
             }
         }
         
-        else if (tag = 3) {
+        else if (tag = 4) {
           Local.SetClanTag("$ fakehead $");
         }
     }
