@@ -1,4 +1,4 @@
-UI.AddDropdown( "Custom clantag", [ "Disabled", "Fakehead animated v1", "Fakehead animated v2", "Fakehead static" ]  );
+UI.AddDropdown( "Custom clantag", [ "Disabled", "Fakehead animated v1", "Fakehead animated v2", "Fakehead - gamesense style", "Fakehead static" ]  );
 var lasttime = 0;
 function onRender( )
 {
@@ -77,6 +77,39 @@ function onRender( )
         }
         
         else if (tag = 4) {
+            switch ((time) % 27) 
+            {
+            case 0: { Local.SetClanTag("                  "); break; }
+            case 1: { Local.SetClanTag("                fa"); break; }
+            case 2: { Local.SetClanTag("               fak"); break; }
+            case 3: { Local.SetClanTag("              fake"); break; }
+            case 4: { Local.SetClanTag("             fakeh"); break; }
+            case 5: { Local.SetClanTag("            fakehe"); break; }
+            case 6: { Local.SetClanTag("           fakehea"); break; }
+            case 7: { Local.SetClanTag("          fakehead"); break; }
+            case 8: { Local.SetClanTag("         fakehead$"); break; }
+            case 9: { Local.SetClanTag("        fakehead$ "); break; }
+            case 10:{ Local.SetClanTag("       fakehead$  "); break; }
+            case 11:{ Local.SetClanTag("      fakehead$   "); break; }
+            case 12:{ Local.SetClanTag("     fakehead$    "); break; }
+            case 13:{ Local.SetClanTag("    fakehead$     "); break; }
+            case 14:{ Local.SetClanTag("   fakehead$      "); break; }
+            case 15:{ Local.SetClanTag("  fakehead$       "); break; }
+            case 16:{ Local.SetClanTag(" fakehead$        "); break; }
+            case 17:{ Local.SetClanTag("fakehead$         "); break; }
+            case 18:{ Local.SetClanTag("akehead$          "); break; }
+            case 19:{ Local.SetClanTag("kehead$           "); break; }
+            case 20:{ Local.SetClanTag("ehead$            "); break; }
+            case 21:{ Local.SetClanTag("head$             "); break; }
+            case 22:{ Local.SetClanTag("ead$              "); break; }
+            case 23:{ Local.SetClanTag("ad$               "); break; }
+            case 24:{ Local.SetClanTag("d$                "); break; }
+            case 25:{ Local.SetClanTag("$                 "); break; }
+            case 26:{ Local.SetClanTag("                  "); break; }
+            }
+        }
+        
+        else (tag = 5) {
           Local.SetClanTag("$ fakehead $");
         }
     }
